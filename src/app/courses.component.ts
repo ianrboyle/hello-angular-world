@@ -2,7 +2,10 @@ import {Component} from "@angular/core"
 //properties to tell angular how this component works
 @Component({
   selector: 'courses',
-  template: '<h2>{{ getCourses() }}</h2>'
+  template: `<h2>{{ title}}</h2> 
+  <ul>
+    <li *ngFor="let course of courses"> {{course}} </li>
+  </ul>`
 })
 // typescript class - PascalCase
 
